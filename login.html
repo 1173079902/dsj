@@ -17,7 +17,30 @@
     <!-- 登入注册页面 -->
     <div class="loginAndRegBox">
         <div class="title-box"></div>
+        <!-- 登入的 -->
+        <div class="login-box">
+            <!-- 登入的表单 -->
+            <form class="layui-form" action="">
+                <!-- 用户名 -->
+                <div class="layui-form-item">
+                    <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 登录按钮 -->
+                <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">立即提交</button>
+            </form>
+            <a href="javascript:;" id="link_reg">去登入</a>
+        </div>
+        <!-- 注册的 -->
+        <div class="reg-box"><a href="javascript:;" id="link_login">去注册</a></div>
     </div>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/login.js"></script>
 </body>
 
 </html>
