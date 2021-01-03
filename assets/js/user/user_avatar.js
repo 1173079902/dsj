@@ -19,9 +19,9 @@ $(function () {
   })
   $('#btnUpload').on('click', function () {
     const dataURL = $image
-      .cropper('getCroppedCanVas', {
+      .cropper('getCroppedCanvas', {
         width: 100,
-        hight: 100
+        height: 100
       })
       .toDataURL('image/png')
     $.ajax({
